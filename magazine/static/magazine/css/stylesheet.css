@@ -2,7 +2,7 @@ html {
   font-size: 100%
 }
 body {
-	font-family: Minion Pro Regular;
+	font-family: 'Caslon';
   color: #000;
 }
 @font-face {
@@ -22,6 +22,12 @@ body {
 	font-family: 'futura_std';
 	src: url('../fonts/FuturaStd-Book.otf');
 }
+
+@font-face {
+  font-family: 'Caslon';
+  src: url('../fonts/Adobe Caslon Pro Regular.ttf');
+}
+
 a {
     color: black;
 }
@@ -33,7 +39,7 @@ a.underline {
     color: black;
 }
 h1 {
-	font-family: 'league_gothicregular';
+	font-family: 'Caslon';
 	text-align: center;
 }
 h2 {
@@ -49,16 +55,10 @@ h3 {
 p {
 	font-family: Minion Pro Regular;
 	font-size: 16px;
-  font-size: 1rem;
-	/*margin-bottom: 20px;
-	padding-bottom: 20px;
-	width: 90%;
-	margin: 0 auto;*/
 }
 
 figure {
-	text-align: center
-	;
+	text-align: center;
 }
 footer{
 	margin-top:50px;
@@ -119,9 +119,6 @@ body{
   padding-top: 0;
 }
 
-.nav{
-	letter-spacing: 3px;
-}
 .affix {
   top:0;
   max-width: none !important;
@@ -149,9 +146,8 @@ body{
 }
 .main-title{
   color: black;
-	font-size:45px;
-	margin:25px;
-	letter-spacing: 3px;
+	font-size: 35px;
+  margin: 32px 0 21px;
 }
 .main-title:hover{
  text-decoration: none;
@@ -229,6 +225,11 @@ body{
   display: inline-block;
   float: none;
   vertical-align: top;
+  font-family: Helvetica Neue;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: .3px;
 }
 
 .search-form-links{
@@ -256,15 +257,15 @@ body{
 }
 .board-list{
 	list-style-type: none;
-	font-family: Minion Pro Regular;
-	font-size: 16px;
-  font-size: 1rem;
+	font-family: Caslon;
+	font-size: 17px;
 	width: 45%;
-  padding-left: 10px;
+  padding: 10px;
 }
 .list-left{
 	float: left;
 	text-align: right;
+  padding-right: 15px;
 }
 .list-right{
 	float: right;
@@ -303,33 +304,70 @@ body{
 }
 @media screen and (min-width: 947px) {
 	.affix .nav-header::before {
-	   content: "THE HARVARD ADVOCATE";
+	   content: "The Harvard Advocate";
+     font-family: 'Caslon';
+     font-size: 20px;
 	   float: left;
 	   display: inline-block;
-	   padding: 15px;
+	   padding: 12px;
 	}
 }
 
 /* Articles */
 
+.article-section-issue-container {
+  width: 800px;
+  margin: 35px auto 5px;
+  max-width: 100%;
+  text-align: left;
+}
+
+.article-issue,
+.article-section {
+  font-family: 'Caslon';
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.article-issue:hover,
+.article-section:hover {
+  text-decoration: underline;
+}
+
+.article-section {
+  color: hsl(277, 85%, 40%);
+}
+
 .article-title{
   color: black;
-  font-size:50px;
-  margin:40px 0px 0px 0px;
-  letter-spacing: 4px;
-
+  font-size: 50px;
+  margin: 10px auto;
+  font-family: 'Caslon';
+  text-align: left;
+  width: 800px;
+  max-width: 100%;
 }
 .article-author{
-  font-family: Times;
-  text-transform: uppercase;
-  font-size: 20px;
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: .3px;
+  text-align: left;
+  margin: 0 auto 40px;
+  width: 800px;
+  max-width: 100%;
 }
 
 article p {
+  font-family: 'Caslon';
+  font-size: 20px;
   padding: 0px;
-  margin: 0px;
+  margin: 14px auto;
   border: 0px;
-  text-indent: 2em;
+  width: 800px;
+  max-width: 100%;
 }
 
 article span {
@@ -369,28 +407,31 @@ article.poetry p {
 	float: right;
 }
 .top-line{
-	font-family: futura;
+	font-family: Helvetica Neue;
+  letter-spacing: 0.5px;
+  font-size: 12.5px;
 	margin-top: 20px;
 }
 .navbar .navbar-collapse {
   text-align: center;
 }
 .header{
-  text-transform: uppercase;
-	letter-spacing: 4px;
-	font-family: futura;
-	padding: 10px;
-	font-size: 22px;
-	padding: 15px;
-	border-bottom: 1px solid #000;
+  letter-spacing: 1px;
+  font-family: Caslon;
+  padding: 10px;
+  text-align: center;
+  font-size: 50px;
+  padding: 30px 0 40px;
+  border-bottom: 1px solid hsl(260, 85%, 90%);
+  margin-bottom: 40px;
 }
 .subheader{
   color: #000;
   text-decoration: none;
-	font-family: futura;
+	font-family: Caslon;
 	padding: 10px;
-	font-size: 18px;
-	padding-left: 50px;
+	font-size: 25px;
+  margin-top: 25px;
 }
 
 .central-message{
@@ -451,13 +492,17 @@ article.poetry p {
 	color: black;
 	margin:0 auto;
 	border: none;
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
+	border-top: 1px solid hsl(260, 85%, 90%);
+	border-bottom: 1px solid hsl(260, 85%, 90%);
 	background-color: white;
 	background-image: none;
 	box-shadow: none;
 	border-radius: 0px;
 	text-align:center;
+}
+.nav.navbar-nav li a {
+  padding: 13px 0 3px;
+  margin: 0 10px;
 }
 .centertext{
 	font-family: Minion Pro Regular;
@@ -467,9 +512,10 @@ article.poetry p {
 	margin: 0 auto;
 }
 .text{
-	font-family: Minion Pro Regular;
-	font-size: 14px;
-	width: 90%;
+	font-family: Caslon;
+	font-size: 20px;
+	width: 800px;
+  max-width: 100%;
 	margin: 0 auto;
 }
 
@@ -482,7 +528,7 @@ article.poetry p {
 }
 
 .container{
-	max-width: 900px;
+	max-width: 1050px;
 }
 .center{
 	text-align: center;
@@ -492,8 +538,9 @@ article.poetry p {
 	padding-left: 10px;
 }
 .copyright{
-	letter-spacing: 2px;
-	font-family: futura;
+	letter-spacing: 1.3px;
+	font-family: Helvetica Neue;
+  text-transform: uppercase;
 	text-align: center;
 	padding: 25px;
 	font-size: 12px;
@@ -549,8 +596,8 @@ article.poetry p {
     font-size: 95%;
 }
 ul li a:hover{
-    text-decoration: none;
-    text-shadow: 1.5px 1.5px #F3BB2A;
+  text-decoration: none;
+  border-bottom: 1px solid hsl(277, 85%, 40%);
 }
 ul li ul.dropdown{
 	position: absolute;

@@ -6833,7 +6833,7 @@ td.visible-print {
     }
     ul li a:hover{
         text-decoration: none;
-        text-shadow: 1.5px 1.5px #F3BB2A;
+        /*text-shadow: 1.5px 1.5px #F3BB2A;*/
     }
     ul li ul.dropdown{
         position: absolute;
